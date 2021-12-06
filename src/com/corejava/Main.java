@@ -6,6 +6,7 @@ public class Main {
      System.out.println("Welcome to employee base computation program ");
      int wagePerHour = 20;
      int fullDayHour = 8;
+     int halfDayHour = 4;
      double checkEmployee = Math.floor((Math.random() * 10) % 2);
      if(checkEmployee == 0)
      {
