@@ -10,7 +10,9 @@ public class Main {
           int totalWorkingDayInMonth = 20;
           int workingDays = 0;
           int monthlySalary = 0;
-          while(workingDays < totalWorkingDayInMonth)
+          int totalWorkingHourInMonth = 100;
+          int workingHour =0;
+          while(workingDays < totalWorkingDayInMonth && workingHour < totalWorkingHourInMonth)
           {
                double checkEmployee =  Math.floor((Math.random() * 10) % 3);
                switch ((int) checkEmployee)
@@ -19,6 +21,7 @@ public class Main {
                          System.out.println("Employee is present full day");
                          System.out.println("Employee wage is " + wagePerHour*fullDayHour );
                          workingDays ++;
+                         workingHour += fullDayHour ;
                          monthlySalary += wagePerHour*fullDayHour;
                          break;
 
@@ -26,6 +29,7 @@ public class Main {
                          System.out.println("Employee is present half day");
                          System.out.println("Employee wage is " + wagePerHour*halfDayHour);
                          workingDays ++;
+                         workingHour += halfDayHour ;
                          monthlySalary += wagePerHour*halfDayHour;
                          break;
                     case 2:
@@ -36,7 +40,7 @@ public class Main {
                }
           }
 
-          System.out.println("monthly salary is" + monthlySalary);
+          System.out.println(" monthly salary is " + monthlySalary + " total working hour in month " + workingHour + " total working days " + workingDays);
 
      }
 }
