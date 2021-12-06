@@ -1,4 +1,4 @@
-package com.collectionframework;
+package com.corejava;
 
 public class Main {
 
